@@ -4,7 +4,7 @@
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>Usman Baba Bello - Portfolio</title>  
-    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->  
+    <link rel="stylesheet" href="style.css">
 </head>  
 <body>  
     <header>  
@@ -76,18 +76,34 @@
     <section id="gallery">  
         <h2>Gallery</h2>  
         <div class="image-gallery">  
-            <img src="image1.jpg" alt="Usman with friends" />  
-            <img src="image2.jpg" alt="Usman at an event" />  
-            <img src="image3.jpg" alt="Usman during a training session" />  
-            <img src="image4.jpg" alt="Usman at a coding bootcamp" />  
-            <img src="image5.jpg" alt="Usman at his graduation" />  
+            <img src="DSC06433.jpg" alt="Usman with friends" />  
+            <img src="DSC05632.jpg" alt="Usman at an event" />  
+            <img src="DSC05855.jpg" alt="Usman during a training session" />  
+            <img src="DSC06627.jpg" alt="Usman at a coding bootcamp" />  
+            <img src="DSC06419.jpg" alt="Usman at his graduation" />  
         </div>  
+    </section>  
+    <section id="contact">  
+        <h2>Contact Me</h2>  
+        <form id="contact-form" onsubmit="handleSubmit(event)">  
+            <label for="name">Name:</label>  
+            <input type="text" id="name" required />  
+            
+            <label for="email">Email:</label>  
+            <input type="email" id="email" required />  
+    
+            <label for="message">Message:</label>  
+            <textarea id="message" required></textarea>  
+    
+            <button type="submit">Send Message</button>  
+        </form>  
+        <p id="confirmation-message" style="display:none;"></p>  
     </section>  
 
     <footer>  
         <p>&copy; 2025 Usman Baba Bello. All rights reserved.</p>  
     </footer>  
 
-    <script src="script.js"></script> <!-- Link to your JS file if needed -->  
+    <script src="script.js"></script> 
 </body>  
 </html>  
